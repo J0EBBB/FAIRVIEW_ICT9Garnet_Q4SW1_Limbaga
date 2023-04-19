@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seatwork 1</title>
+</head>
+<style>
+	table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 40%;
+	}
+
+	th, td {
+		border: 1px solid white;
+		text-align: left;
+		padding: 8px;
+	}
+</style>
+<body>
+	<table id="myTable">
+  <tr>
+    <td>
+    	<h1 style="text-align: center;">Quiz Mansion</h1>
+    	<p style="text-align: center;">Complete this quiz and you will get absolutely nothing.</p>
+    	<br>
+		<button style="position: absolute; left: 50%; transform: translateX(-50%);" id="start" onclick="Start()">Start The Quiz</button>
+		<br>
+		<br>
+	</td>
+  </tr>
+</table>
+
+	<script type="text/javascript">
+	document.getElementById("start").onclick = function () {
+		location.href = "Question1.html"
+	}
+	function changeBackground(color) {
+		document.body.style.background = color;
+	}
+	myTable.onmouseover = function(){
+ 		myTable.setAttribute("align","center");
+  		myTable.setAttribute("border","1px solid");
+  		myTable.setAttribute("bgcolor","white");
+}
+
+	window.addEventListener("load",function() {changeBackground('dodgerblue')});
+
+	</script>
+</body>
+</html>

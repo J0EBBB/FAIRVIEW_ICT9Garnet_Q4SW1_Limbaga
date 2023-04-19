@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seatwork 1</title>
+</head>
+<style>
+	table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 40%;
+	}
+
+	th, td {
+		border: 1px solid white;
+		text-align: left;
+		padding: 8px;
+	}
+</style>
+<body>
+	<table id="myTable">
+  <tr>
+    <td>
+    	<h1 style="text-align: center;">GAME OVER</h1>
+    	<p style="text-align: center;">Try Again?</p>
+    	<br>
+		<button style="position: absolute; left: 50%; transform: translateX(-50%);" id="restart" onclick="Restart()">Back to Start</button>
+		<br>
+		<br>
+	</td>
+  </tr>
+</table>
+
+	<script type="text/javascript">
+	document.getElementById("restart").onclick = function () {
+		location.href = "FAIRVIEW_ICT9-Garnet_Q4SW1_Limbaga.html"
+	}
+	function changeBackground(color) {
+		document.body.style.background = color;
+	}
+	myTable.onmouseover = function(){
+ 		myTable.setAttribute("align","center");
+  		myTable.setAttribute("border","1px solid");
+  		myTable.setAttribute("bgcolor","white");
+}
+
+	window.addEventListener("load",function() {changeBackground('brown')});
+
+	</script>
+	<script src="wrong.js" type="text/javascript"></script>
+</body>
+</html>
